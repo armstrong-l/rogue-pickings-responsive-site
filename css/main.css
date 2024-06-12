@@ -1,15 +1,31 @@
 /******** GLOBAL STYLES ********/
+html {
+	font-size:16px;
+  }
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: .9em;
 	color: #000000;
+}
+
+header, 
+.top-section, 
+.bottom-section,
+footer {
+	display: flex;
+	justify-content: center;
 }
 
 /* The width property has been changed to max-width */
 .content-wrapper {
+	width: 90%;
 	max-width: 1200px;
-	margin: 0 auto;
-	overflow: auto;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	/* margin: 0 auto; */
+	/* overflow: auto; */
 }
 
 h1,
@@ -21,19 +37,19 @@ h4 {
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 1.5em;
 }
 
 h3 {
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 h4 {
-	font-size: 12px;
+	font-size: 0.75em;
 }
 
 p {
@@ -43,14 +59,19 @@ p {
 /******** HEADER STYLES ********/
 /* The widths are in a percentage! */
 header {
-	height: 110px;
-	margin: 0 auto;
+	/* height: 110px; */
+	/* margin: 0 auto; */
+	text-align:center;
 }
 
 header h1 {
-	float: left;
-	margin: 0;
-	padding: 38px 0;
+	/* float: left; */
+	/* margin: 0; */
+	/* padding: 38px 0; */
+	width: 100%;
+	padding: 15px;
+	border-bottom: 3px solid #77a466;
+	
 }
 
 header h1 span {
@@ -59,20 +80,22 @@ header h1 span {
 
 header nav {
 	float: right;
-	padding: 46px 0;
+	padding: 0 0 15px 0; 
 }
 
 header nav ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 
 header nav ul li {
-	display: inline-block;
-	font-size: 14px;
+	/* display: inline-block; */
+	font-size: .875rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 0 10px;
+	padding: 10px 0;
+	width: 100%;
 }
 
 header nav ul li a {
@@ -109,23 +132,26 @@ header nav ul li a {
 .section-one,
 .section-two,
 .section-three {
-	box-sizing: border-box;
-	float: left;
+	/* box-sizing: border-box; */
+	/* float: left; */
 	padding: 0 40px;
 }
 
 .section-one {
-	width: 29%;
+	/* width: 29%; */
+	width: 100%;
 }
 
 .section-two {
-	width: 42%;
+	/* width: 42%; */
 	border-left: 5px solid #EEE;
 	border-right: 5px solid #EEE;
+	width: 100%;
 }
 
 .section-three {
-	width: 29%;
+	/* width: 29%; */
+	width: 100%;
 }
 
 .bottom-section h3 {
@@ -139,7 +165,7 @@ header nav ul li a {
 
 .menu-list li {
 	color: #45610E;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 36px;
 }
 
@@ -154,5 +180,5 @@ footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #45610E;
-	font-size: 14px;
+	font-size: .875rem;
 }
